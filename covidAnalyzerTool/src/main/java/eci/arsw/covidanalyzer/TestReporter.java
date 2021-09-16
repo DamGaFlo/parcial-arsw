@@ -44,7 +44,7 @@ public class TestReporter {
             
             Unirest.post(SERVER_URL + complement)
                     .body(jsonString)
-                    .asJson();
+                    .asString();
         } catch (JsonProcessingException | UnirestException e) {
             Logger.getLogger(TestReporter.class.getName()).log(Level.SEVERE, "Unable to report covid test result", e);
         }

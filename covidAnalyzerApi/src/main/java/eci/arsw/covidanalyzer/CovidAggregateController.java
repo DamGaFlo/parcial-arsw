@@ -30,7 +30,6 @@ public class CovidAggregateController {
     
     
     @RequestMapping(value = "/covid/result/true-positive",method = RequestMethod.POST)
-    @ResponseBody
     public  ResponseEntity<?> addAccountTP(@RequestBody Result result){
         try {
             
@@ -43,7 +42,6 @@ public class CovidAggregateController {
     }
     
     @RequestMapping(value = "/covid/result/true-negative",method = RequestMethod.POST)
-    @ResponseBody
     public  ResponseEntity<?> addAccountTN(@RequestBody Result result){
         try {
             
@@ -56,7 +54,6 @@ public class CovidAggregateController {
     }
     
     @RequestMapping(value = "/covid/result/false-positive",method = RequestMethod.POST)
-    @ResponseBody
     public  ResponseEntity<?> addAccountFP(@RequestBody Result result){
         try {
             
@@ -69,7 +66,6 @@ public class CovidAggregateController {
     }
     
     @RequestMapping(value = "/covid/result/false-negative",method = RequestMethod.POST)
-    @ResponseBody
     public  ResponseEntity<?> addAccountFN(@RequestBody Result result){
         try {
             
